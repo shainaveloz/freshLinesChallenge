@@ -1,0 +1,1189 @@
+Delivered-To: shaina.veloz@gmail.com
+Received: by 2002:ac8:468e:0:0:0:0:0 with SMTP id g14-v6csp1151661qto;
+        Fri, 15 Jun 2018 12:33:37 -0700 (PDT)
+X-Google-Smtp-Source: ADUXVKLcMPxvptm73XoTrjVrS/yGcPcvQAby2J/JpY/WoL39y5QZjmJ/h7RUbZ6ZrMwxOn9RtZX1
+X-Received: by 2002:aca:605:: with SMTP id 5-v6mr1721891oig.297.1529091217819;
+        Fri, 15 Jun 2018 12:33:37 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1529091217; cv=none;
+        d=google.com; s=arc-20160816;
+        b=a97atIa8YzEKsYSOk99NyQxHTOefUl5hF1MJoGHq2CMH8YbeQbD8+5w7tHbIMw7100
+         lNVCfks/jgvowlyGRCjY61ivF24jzoxciaKYhKt2gHeijdn5Bo7oYc5r6lPx5YTTYZcj
+         u3I3k9ez7tr/PBMOUaJgRvvkJp/Yo5PqYlEophpOlxgk0wMtjThlQJoOcpzNHdP5NuVV
+         OwHCgrPtNkUjCb4lOaLJtIlTnYch00VnVyIJAGT3IeYLox7D8q0VEIMO5lPtJ29EbRvT
+         15pZwh6eTSFwJ6IfXFsOvfayW0cQOsnskUCNKYfmIqtdiDZievaSE6pVvRbp+7AJuB4k
+         vc+Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:mime-version:subject:references:in-reply-to:message-id
+         :to:from:date:dkim-signature:arc-authentication-results;
+        bh=Rcv2mZ17krPkNg95c/pmJjk93zRsH9/zfRWysWzbeFs=;
+        b=Hl4xHdBHwZd5wrxjHQ8Fj3rVWyTcPpHms7KaoeODR1jL72gLjkoj8Y1LYWbL43lw5c
+         u7ql1SZz5JRJNTEdgTgHNxgamDkZEvPU4abtzZYkLVEnsTWJ7OVALAT/qoblc/NHgMzS
+         zyiIyTZE1xh4iHMhZ0Fjp4ytZpMEsImQEkPi5iT056OsZ9bHZerULQfDXB3wO8XsgzNf
+         yqTbnPvIA2n9bYUEeIN5EiNGfWszdhwkS6sthX/53Zl9XikIpiPrcZ+O9dEWUqo4e2Gj
+         UlIgFHNHEfMcMdwW6aemN8F/IAoLnRyC1GqLRyWSqzvo3xFN5iwR2IlUDqJg35jsuQZk
+         JweQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@indeedemail.com header.s=default header.b=tV+hgT6g;
+       spf=pass (google.com: domain of theresa6827_zmw@indeedemail.com designates 198.58.75.96 as permitted sender) smtp.mailfrom=theresa6827_zmw@indeedemail.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=indeedemail.com
+Return-Path: <theresa6827_zmw@indeedemail.com>
+Received: from mail96.indeedmail.com (mail96.indeedemail.com. [198.58.75.96])
+        by mx.google.com with ESMTPS id w204-v6si2816350oig.335.2018.06.15.12.33.37
+        for <shaina.veloz@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 15 Jun 2018 12:33:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of theresa6827_zmw@indeedemail.com designates 198.58.75.96 as permitted sender) client-ip=198.58.75.96;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@indeedemail.com header.s=default header.b=tV+hgT6g;
+       spf=pass (google.com: domain of theresa6827_zmw@indeedemail.com designates 198.58.75.96 as permitted sender) smtp.mailfrom=theresa6827_zmw@indeedemail.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=indeedemail.com
+Received: from aus-mexec10.indeed.net (aus-mexec10.indeed.net [10.1.0.147])
+	by mail96.indeedmail.com (Postfix) with ESMTP id 416rJK3MSMz18YDp0
+	for <shaina.veloz@gmail.com>; Fri, 15 Jun 2018 14:33:37 -0500 (CDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=indeedemail.com;
+	s=default; t=1529091217;
+	bh=AaVe+c/MrmsCYCvMltOCczyStzFEOQN6oOwgjw/R/ho=;
+	h=Date:From:To:In-Reply-To:References:Subject;
+	b=tV+hgT6gw7ytXlaP2O9OJsMCRXCglyqUSY7ht3F3+k9N8zELI+TlISu1CBlh8eSnI
+	 aMv17pPwGBaW1pJJ6tZW23myWW9GeN/iFirQvQrMsnp+z7ltFXGXZoUVn++0GHoPKO
+	 ObMvwIbHhMKnKQSbsj5qW1ItBYcpkglGlbRqgdwA=
+Date: Fri, 15 Jun 2018 15:33:32 -0400
+From: Theresa Smith from Fresh Lines <theresa6827_zmw@indeedemail.com>
+To: Shaina Veloz <shaina.veloz@gmail.com>
+Message-ID: <064b9213-1683-3f99-ddd2-67b39adb9eb6@frshlns.com>
+In-Reply-To: <1cg2dc8js3cbja61@indeedemail.com>
+References: <1cg2dc8js3cbja61@indeedemail.com>
+Subject: Re: Javascript Developers candidate - Shaina Veloz applied on
+ Indeed
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_25159250_790175625.1529091217468"
+Feedback-ID: DREMR:DREMR:Indeed
+X-Indeed-FBL: :2:c6b6db5a6615bc91dda75799c14d2c8fd72ffcbdd9e33ac32553cc4ba869133b6d77692308d74476
+X-Indeed-Client-App: DREMR
+X-Indeed-Content-Type: DREMR
+X-Indeed-TK: 1cg2f0m0633qp98h
+
+------=_Part_25159250_790175625.1529091217468
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_25159251_223940146.1529091217468"
+
+------=_Part_25159251_223940146.1529091217468
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hi Shaina,
+
+Thank you for your interest in a position with Fresh Lines.=C2=A0 As a firs=
+t=20
+step in our hiring process, will you please complete the practical below=20
+using Javascript and send my way when finished?
+
+If you have any questions at all, please let me know.
+
+Thanks,
+Theresa
+
+Theresa Smith
+407-930-8265
+theresa@frshlns.com
+
+
+PO Box 780995
+Orlando, FL 32878
+www.frshlns.com
+
+=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=
+=80=94=E2=80=94=E2=80=94
+
+*Coding Practical*
+
+*Parsing an Email (Javascript)*
+
+What do I mean by parse an email? Go to Gmail, open an incoming email,=20
+and do View Original. You should see a text file of a raw email. The=20
+goal here is to parse that and extract relevant fields.
+
+This is actually a very difficult thing and a proper implementation=20
+could take months. However, it's possible to do the basics, without=20
+handling all of the intricacies, in about an hour.
+
+Your goals:
+
+  * Take in an email and parse it into relevant fields. Figure out what
+    those relevant fields are.
+  * Create a good foundation. Try to write extensible/maintainable code.
+  * When you're done, list out next steps you'd take in your
+    implementation. Eg, 'I'd focus on handling different MIME types in
+    the body', etc.
+  * Don't use a library like TMail that does parsing for you, but feel
+    free to use any non-email specific libraries you want to.=EF=BB=BF
+
+
+
+On 6/15/18 3:04 PM, Shaina Veloz wrote:
+> Javascript Developers candidate - Shaina Veloz applied on Indeed
+> Shaina Veloz applied for your Javascript Developers job in Orlando, FL
+>
+> Interested in candidate?
+> Mark your interest level to keep your candidate list organized.
+> Yes=20
+> <https://employers.indeed.com/l/c/candidates/sentiment?refUid=3D1cg2dc8pg=
+2uinaue&id=3DAAAAAVHRe29KFcp44ac%2BeYNcM7kArp05iStz5W1N8zES%2FfgWilYj17s042=
+L%2FScAIVrcnHRwEsKpqGXLJDkjK09ofAkEHEHUGnQjeCM9Nf3NmZ%2BXAJIJQWBZ23i80uiBUv=
+axnuljnAATxlk2WYKYLesBhN%2BoKypCiApUtX1DPgVPT2QZ19A%3D%3D&token=3Dhttps%3A%=
+2F%2Femployers.indeed.com%2Fl%2Fc%2Fcandidates%2Fsentiment%3FrefUid%3D1cg2d=
+c8pg2uinaue%26id%3DAAAAAVHRe29KFcp44ac%252BeYNcM7kArp05iStz5W1N8zES%252FfgW=
+ilYj17s042L%252FScAIVrcnHRwEsKpqGXLJDkjK09ofAkEHEHUGnQjeCM9Nf3NmZ%252BXAJIJ=
+QWBZ23i80uiBUvaxnuljnAATxlk2WYKYLesBhN%252BoKypCiApUtX1DPgVPT2QZ19A%253D%25=
+3D>=20
+>
+>
+> =09
+> Maybe=20
+> <https://employers.indeed.com/l/c/candidates/sentiment?refUid=3D1cg2dc8pg=
+2uinaue&id=3DAAAAATv25n%2BZNFJqKVYS%2BbqkONaqNd%2FTTz5Ldnd%2FyjcWtJex4tOFFD=
+WKx32XkMkYMajfWEFK0Frv0KhIJLS1pibJ3DqDfyiLFSN0RdhTQSN5rdCV4MG7AmEhvJN53sOJA=
+2%2BOMWGvcgdHzjX2S5hsSqeTf4XGCcQBx5mYnQ2ZKvHFjA%3D%3D&token=3Dhttps%3A%2F%2=
+Femployers.indeed.com%2Fl%2Fc%2Fcandidates%2Fsentiment%3FrefUid%3D1cg2dc8pg=
+2uinaue%26id%3DAAAAATv25n%252BZNFJqKVYS%252BbqkONaqNd%252FTTz5Ldnd%252FyjcW=
+tJex4tOFFDWKx32XkMkYMajfWEFK0Frv0KhIJLS1pibJ3DqDfyiLFSN0RdhTQSN5rdCV4MG7AmE=
+hvJN53sOJA2%252BOMWGvcgdHzjX2S5hsSqeTf4XGCcQBx5mYnQ2ZKvHFjA%253D%253D%26tok=
+en%3Dhttps%253A%252F%252Femployers.indeed.com%252Fl%252Fc%252Fcandidates%25=
+2Fsentiment%253FrefUid%253D1cg2dc8pg2uinaue%2526id%253DAAAAAVHRe29KFcp44ac%=
+25252BeYNcM7kArp05iStz5W1N8zES%25252FfgWilYj17s042L%25252FScAIVrcnHRwEsKpqG=
+XLJDkjK09ofAkEHEHUGnQjeCM9Nf3NmZ%25252BXAJIJQWBZ23i80uiBUvaxnuljnAATxlk2WYK=
+YLesBhN%25252BoKypCiApUtX1DPgVPT2QZ19A%25253D%25253D>=20
+>
+>
+> =09
+> Reject=20
+> <https://employers.indeed.com/l/c/candidates/sentiment?refUid=3D1cg2dc8pg=
+2uinaue&id=3DAAAAAYcVw%2F0e9jJRy8wDtBa%2FvGKDnDhJt%2FH9PYhAttzVXA8kQfC45kJV=
+%2FQrqhY4gq7LGVkCVOMN6Wzv6pbiPTEwAHSjSmS5rgFApADpcgd2OOLhNY1LwI%2F8YLNHv3Z1=
+Y1n2ZAb3MgMb08qXbyfj%2BrjlIcJlUiOeB9BmlOYxDtrSJV955rQ%3D%3D&token=3Dhttps%3=
+A%2F%2Femployers.indeed.com%2Fl%2Fc%2Fcandidates%2Fsentiment%3FrefUid%3D1cg=
+2dc8pg2uinaue%26id%3DAAAAAYcVw%252F0e9jJRy8wDtBa%252FvGKDnDhJt%252FH9PYhAtt=
+zVXA8kQfC45kJV%252FQrqhY4gq7LGVkCVOMN6Wzv6pbiPTEwAHSjSmS5rgFApADpcgd2OOLhNY=
+1LwI%252F8YLNHv3Z1Y1n2ZAb3MgMb08qXbyfj%252BrjlIcJlUiOeB9BmlOYxDtrSJV955rQ%2=
+53D%253D%26token%3Dhttps%253A%252F%252Femployers.indeed.com%252Fl%252Fc%252=
+Fcandidates%252Fsentiment%253FrefUid%253D1cg2dc8pg2uinaue%2526id%253DAAAAAT=
+v25n%25252BZNFJqKVYS%25252BbqkONaqNd%25252FTTz5Ldnd%25252FyjcWtJex4tOFFDWKx=
+32XkMkYMajfWEFK0Frv0KhIJLS1pibJ3DqDfyiLFSN0RdhTQSN5rdCV4MG7AmEhvJN53sOJA2%2=
+5252BOMWGvcgdHzjX2S5hsSqeTf4XGCcQBx5mYnQ2ZKvHFjA%25253D%25253D%2526token%25=
+3Dhttps%25253A%25252F%25252Femployers.indeed.com%25252Fl%25252Fc%25252Fcand=
+idates%25252Fsentiment%25253FrefUid%25253D1cg2dc8pg2uinaue%252526id%25253DA=
+AAAAVHRe29KFcp44ac%2525252BeYNcM7kArp05iStz5W1N8zES%2525252FfgWilYj17s042L%=
+2525252FScAIVrcnHRwEsKpqGXLJDkjK09ofAkEHEHUGnQjeCM9Nf3NmZ%2525252BXAJIJQWBZ=
+23i80uiBUvaxnuljnAATxlk2WYKYLesBhN%2525252BoKypCiApUtX1DPgVPT2QZ19A%2525253=
+D%2525253D>=20
+>
+>
+> Interest levels are not visible to candidates.
+>
+> Application Questions
+>
+>
+> Are you in Orlando, FL?
+> Yes
+>
+> You may also reply to this email to contact candidate.
+>
+> Watch now=20
+> <https://employers.indeed.com/redirect/candidatemanagementvideolink?refUi=
+d=3D1cg2dc8pg2uinaue&ctx=3Demail-application-candidate-management-video&lid=
+=3Dcandidate-management-video>=20
+> =09
+> *Video*: Learn more about managing your candidates on Indeed
+> Watch now=20
+> <https://employers.indeed.com/redirect/candidatemanagementvideolink?refUi=
+d=3D1cg2dc8pg2uinaue&ctx=3Demail-application-candidate-management-video&lid=
+=3Dcandidate-management-video>=20
+>
+>
+> Manage candidates from your phone.
+> App Store=20
+> <https://employers.indeed.com/redirect/appstorelink?campaignname=3DApplic=
+ation%20Bottom%20Promo&appstore=3Dios>Google=20
+> Play=20
+> <https://employers.indeed.com/redirect/appstorelink?campaignname=3DApplic=
+ation%20Bottom%20Promo&appstore=3Dandroid>=20
+>
+>
+> Indeed Logo
+> Indeed <http://www.indeed.com?isid=3Dapplication-email&hl=3Den&co=3DUS> -=
+=20
+> one search. all jobs.
+> 6433 Champion Grandview Way, Building 1, Austin, TX 78750
+> =C2=A92018 Indeed
+>
+> *Suspect spam or fraud?* Report this message to Indeed=20
+> <https://m.indeedemail.com/report-email?info=3DHrC5odAoDNgtjh1k-VHJAFTXBS=
+Fe3RFkC9w_sWyj5P3SOg-SQvwgrkzuuGk5z7FuycNyLEND0x0AiXjOND5-pGPvx_tLNAWprnDFy=
+M0oShFMYT_gQnV5D8HVPtCAlb8nQXOYmnkNRa3RC3jDK6PyX3i66lMuMwVDdgYm7NoSSznpyxFS=
+7p0C>=20
+>
+> By replying or using an indeedemail.com email address, you agree that=20
+> this email will be processed and analyzed according to the Indeed=20
+> Cookie Policy <https://www.indeed.com/legal?hl=3Den&co=3DUS#cookies>,=20
+> Privacy Policy <https://www.indeed.com/legal?hl=3Den&co=3DUS#privacy>, an=
+d=20
+> Terms of Service <https://www.indeed.com/legal?hl=3Den&co=3DUS#tos>.
+> Indeed <https://www.indeed.com/?hl=3Den&co=3DUS> | 6433 Champion Grandvie=
+w=20
+> Way, Building 1, Austin, TX 78750
+
+
+
+Reply to this email to respond directly to the employer.
+
+This email relates to your application for Javascript Developers at Fresh L=
+ines, submitted on Indeed.
+
+You'll have the option to tell the employer why you're closing your applica=
+tion, and you'll still be eligible for other roles at this company.
+https://cts.indeed.com/v0?tk=3Dc9124864-0df1-4b37-8859-14a0f124d2f9&amp;r=
+=3Dhttps%3A%2F%2Flink.indeed.com%2Fwithdraw%2Fb0249ad0f534a04011a4%3Fco%3DU=
+S%26hl%3Den_US
+
+Suspect spam or fraud?
+Report this message to Indeed <https://m.indeedemail.com/report-email?info=
+=3D0saSrpPWH5p7uooZdNLFsTWr8z0WoIQna4NfDYsRa_l8mS6ypKjGTFrSUuYYCCSQJfbJRpev=
+nmPnH4fg2ZHJwVViJohFWW_ZjnFwpKNel3GtDn2V7l28X32DL0ozjMEW_3Ek-RWWj-FaQMXLK9s=
+OeubONM0pI274d2be7Ga7VhgOaSWUVC5iTRPRYjrH8NbW3bCVi1hhGqlY6YA>
+
+By replying or using an indeedemail.com email address, you agree that this =
+email will be processed and analyzed according to the Indeed Cookie Policy =
+<https://www.indeed.com/legal?hl=3Den&amp;co=3DUS#cookies>, Privacy Policy =
+<https://www.indeed.com/legal?hl=3Den&amp;co=3DUS#privacy>, and Terms of Se=
+rvice <https://www.indeed.com/legal?hl=3Den&amp;co=3DUS#tos>.
+Indeed | 6433 Champion Grandview Way, Building 1, Austin, TX 78750
+------=_Part_25159251_223940146.1529091217468
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+<html>
+ <head>=20
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">=
+=20
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">=
+=20
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1">=20
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=20
+  <meta name=3D"format-detection" content=3D"address=3Dno">=20
+  <style type=3D"text/css">@media screen and (max-width: 500px) {.stack {di=
+splay:block !important; padding:8px 12px !important; box-sizing:border-box =
+!important; width:100% !important;}.iris-button-wrapper {width:100% !import=
+ant; margin:auto !important; text-align:center !important;}.iris-button {wi=
+dth:100% !important; display:block !important; box-sizing:border-box !impor=
+tant;}.iris-button-label {width:300px !important; display:block !important;=
+ margin:0 auto !important;}.iris-button-mobile-only {display:table !importa=
+nt; max-height:none !important; overflow:visible !important;}.iris-button-h=
+eader-mobile-only {display:block !important; max-height:none !important; ov=
+erflow:visible !important;}.ph-20 {padding-left:20px !important; padding-ri=
+ght:20px !important;}.iris-replay-test-2-wrapper {display:block !important;=
+ width:280px !important; margin:0 auto !important;}}</style>=20
+ </head>=20
+ <body text=3D"#000000" bgcolor=3D"#FFFFFF">=20
+  <div id=3D"indeedemailpixel">=20
+   <img src=3D"https://m.indeedemail.com/emailpixel.gif?info=3DWuFhueszcc82=
+9RQoihR5DUuAR0d7SrnYpNLVuXaDfWx1ZsS0j400v7-hbW3mmegPi8zrUVImTJu1dhjnKuG9ip1=
+Z3h1FsaQSgT5SpZr1_ol6GaSD3sVAw2407oXWA6mHVHXw9MVmfgQ3m0rjB9Sm21jpd74PnmV8rU=
+fi7qpDfoOxePmaINxpVL4HzQtpEqJO">=20
+  </div> Hi Shaina,=20
+  <br>=20
+  <br>=20
+  <div style=3D"box-sizing: border-box; color: rgb(8, 8, 8);
+      font-family: Roboto, &quot;Helvetica Neue&quot;, Helvetica, Arial,
+      sans-serif; font-size: 13px; font-style: normal;
+      font-variant-ligatures: normal; font-variant-caps: normal;
+      font-weight: 400; letter-spacing: normal; orphans: 2; text-align:
+      start; text-indent: 0px; text-transform: none; white-space:
+      normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width:
+      0px; background-color: rgb(255, 255, 255); text-decoration-style:
+      initial; text-decoration-color: initial;">=20
+   <font size=3D"+1">Thank you for your interest in a position with Fresh L=
+ines.&nbsp; As a first step in our hiring process, will you please complete=
+ the practical below using Javascript and send my way when finished?</font>=
+=20
+   <br>=20
+   <font size=3D"+1"> </font>=20
+   <br style=3D"box-sizing: border-box;">=20
+   <font size=3D"+1"> If you have any questions at all, please let me know.=
+</font>=20
+   <br style=3D"box-sizing: border-box;">=20
+   <font size=3D"+1"> </font>=20
+   <br style=3D"box-sizing: border-box;">=20
+   <font size=3D"+1"> Thanks,</font>=20
+   <br style=3D"box-sizing: border-box;">=20
+   <font size=3D"+1"> Theresa</font>=20
+   <br>=20
+   <br>=20
+   <div class=3D"moz-signature">
+     Theresa Smith=20
+    <br> 407-930-8265=20
+    <br>=20
+    <a class=3D"moz-txt-link-abbreviated" href=3D"mailto:theresa@frshlns.co=
+m">theresa@frshlns.com</a>=20
+    <br>=20
+    <br>=20
+    <a><img src=3D"cid:part2.1C5F4D6F.DBCE8AC9@frshlns.com" alt=3D"" width=
+=3D"200" height=3D"37" border=3D"0"></a>=20
+    <br> PO Box 780995=20
+    <br> Orlando, FL 32878=20
+    <br>=20
+    <a class=3D"moz-txt-link-abbreviated" href=3D"http://www.frshlns.com">w=
+ww.frshlns.com</a>=20
+   </div>=20
+   <br style=3D"box-sizing: border-box;"> =E2=80=94=E2=80=94=E2=80=94=E2=80=
+=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=E2=80=94=20
+   <br style=3D"box-sizing: border-box;">=20
+   <br style=3D"box-sizing: border-box;">=20
+   <font size=3D"+1"><b style=3D"box-sizing: border-box; font-weight:
+          bold;">Coding Practical</b><br style=3D"box-sizing: border-box;">=
+ <br style=3D"box-sizing: border-box;"> <b style=3D"box-sizing: border-box;=
+ font-weight: bold;">Parsing an Email (Javascript)</b><br style=3D"box-sizi=
+ng: border-box;"> <br style=3D"box-sizing: border-box;"> What do I mean by =
+parse an email? Go to Gmail, open an incoming email, and do View Original. =
+You should see a text file of a raw email. The goal here is to parse that a=
+nd extract relevant fields.<br style=3D"box-sizing: border-box;"> <br style=
+=3D"box-sizing: border-box;"> This is actually a very difficult thing and a=
+ proper implementation could take months. However, it's possible to do the =
+basics, without handling all of the intricacies, in about an hour.<br style=
+=3D"box-sizing: border-box;"> <br style=3D"box-sizing: border-box;"> Your g=
+oals:</font>=20
+   <br>=20
+   <br>=20
+  </div>=20
+  <ul style=3D"box-sizing: border-box; margin-top: 0px; margin-bottom:
+      9px; color: rgb(8, 8, 8); font-family: Roboto, &quot;Helvetica
+      Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px;
+      font-style: normal; font-variant-ligatures: normal;
+      font-variant-caps: normal; font-weight: 400; letter-spacing:
+      normal; orphans: 2; text-align: start; text-indent: 0px;
+      text-transform: none; white-space: normal; widows: 2;
+      word-spacing: 0px; -webkit-text-stroke-width: 0px;
+      background-color: rgb(255, 255, 255); text-decoration-style:
+      initial; text-decoration-color: initial;">=20
+   <li style=3D"box-sizing: border-box;">Take in an email and parse it into=
+ relevant fields. Figure out what those relevant fields are.</li>=20
+   <li style=3D"box-sizing: border-box;">Create a good foundation. Try to w=
+rite extensible/maintainable code.</li>=20
+   <li style=3D"box-sizing: border-box;">When you're done, list out next st=
+eps you'd take in your implementation. Eg, 'I'd focus on handling different=
+ MIME types in the body', etc.</li>=20
+   <li style=3D"box-sizing: border-box;">Don't use a library like TMail tha=
+t does parsing for you, but feel free to use any non-email specific librari=
+es you want to.=EF=BB=BF</li>=20
+  </ul>=20
+  <div class=3D"moz-signature">=20
+  </div>=20
+  <div class=3D"moz-signature">=20
+   <div class=3D"moz-signature">=20
+    <br>=20
+   </div>=20
+   <br>=20
+  </div>=20
+  <div class=3D"moz-cite-prefix">
+    On 6/15/18 3:04 PM, Shaina Veloz wrote:=20
+   <br>=20
+  </div>=20
+  <blockquote type=3D"cite" cite=3D"mid:1cg2dc8js3cbja61@indeedemail.com">=
+=20
+   <title>Javascript Developers candidate - Shaina Veloz applied on
+        Indeed</title>=20
+   <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"=
+>=20
+   <style type=3D"text/css">
+        @media only screen and (min-device-width: 320px) and (max-device-wi=
+dth: 568px),
+        @media only screen and (min-device-width: 320px) and (max-device-wi=
+dth: 480px) {
+            /* iPhones */
+            table[id=3DtableWrapper] {
+                margin-top: 0;
+            }
+            td[id=3DheaderWrapper] {
+                display: table-cell;
+                padding: 10px 10px 20px 10px;
+            }
+        }
+        @media only screen and (min-width: 600px) {
+            /* Apple Mail */
+            #tableWrapper {
+                width: 600px !important;
+            }
+            #featureimage {
+                width: 598px !important;
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+            table[class=3D"flexibleButton"] {width:100% !important;}
+        }
+    </style>=20
+   <!--[if gte mso 9]>
+        <style type=3D"text/css">
+          /* Outlook 2007-2013 */
+          #tableWrapper { width:600px !important; }
+          .ctaButtonWrapper { width: 33.33% !important; }
+          .ctaButton { background-color: #f5f5f5; padding: 12px 18px; }
+          .ctaButton a { border: none !important; background-color: #f5f5f5=
+ !important; padding:0 !important; }
+          .blueButton { background-color: #2164f3; padding: 10px 18px; }
+          .blueButton a { border: none !important; background-color: #2164f=
+3 !important; padding:0 !important; }
+        </style>
+    <![endif]-->=20
+   <!--[if IE]>
+        <style type=3D"text/css">
+            /* Older Outlook/Lotus Notes */
+            #tableWrapper { width: 600px !important; }
+            #headerContent { padding: 20px !important; }
+        </style>
+    <![endif]-->=20
+   <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"=
+>=20
+   <meta name=3D"viewport" content=3D"width=3Ddevice-width,
+        initial-scale=3D1">=20
+   <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=20
+   <meta name=3D"format-detection" content=3D"address=3Dno">=20
+   <style type=3D"text/css">@media screen and (max-width: 500px) {.stack {d=
+isplay:block !important; padding:8px 12px !important; box-sizing:border-box=
+ !important; width:100% !important;}.iris-button-wrapper {width:100% !impor=
+tant; margin:auto !important; text-align:center !important;}.iris-button {w=
+idth:100% !important; display:block !important; box-sizing:border-box !impo=
+rtant;}.iris-button-label {width:300px !important; display:block !important=
+; margin:0 auto !important;}.iris-button-mobile-only {display:table !import=
+ant; max-height:none !important; overflow:visible !important;}.iris-button-=
+header-mobile-only {display:block !important; max-height:none !important; o=
+verflow:visible !important;}.ph-20 {padding-left:20px !important; padding-r=
+ight:20px !important;}.iris-replay-test-2-wrapper {display:block !important=
+; width:280px !important; margin:0 auto !important;}}</style>=20
+   <div alt=3D"dradis-application-email">=20
+    <table id=3D"backgroundTable" style=3D"margin: 0; padding: 0; width:
+          100%; line-height: 100%;" width=3D"100%" cellspacing=3D"0" cellpa=
+dding=3D"0" border=3D"0">=20
+     <tbody>=20
+      <tr>=20
+       <td style=3D"margin:0; border-collapse:collapse;" align=3D"center">=
+=20
+        <table id=3D"tableWrapper" style=3D"max-width: 600px;
+                  border: 1px solid #DDDDDD; margin: 10px 0;" cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0">=20
+         <tbody>=20
+          <tr>=20
+           <td style=3D"margin:0; border-collapse:collapse;" align=3D"cente=
+r">=20
+            <div style=3D"padding: 5px;">
+              &nbsp;=20
+            </div>=20
+            <table style=3D"table-layout:fixed;" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0">=20
+             <tbody>=20
+              <tr>=20
+               <td id=3D"contentWrapper" style=3D"margin:
+                                0;border-collapse: collapse;text-align:
+                                left;" align=3D"center">=20
+                <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0">=20
+                 <tbody>=20
+                  <tr>=20
+                   <td style=3D"border-collapse:
+                                        collapse; font-family:
+                                        'HelveticaNeue-Light','Helvetica
+                                        Neue Light','Helvetica Neue',
+                                        Helvetica, Arial, sans-serif;
+                                        font-size: 26px;
+                                        font-weight:normal; line-height:
+                                        32px; margin: 0; padding: 0 7%
+                                        25px 7%;"><span style=3D"color:
+                                          #ff6600;">Shaina Veloz</span> app=
+lied for your Javascript Developers job in Orlando, FL</td>=20
+                  </tr>=20
+                 </tbody>=20
+                </table>=20
+                <table class=3D"ynmButtonWrapper" style=3D"width: 100%;" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+                 <tbody>=20
+                  <tr>=20
+                   <td class=3D"bodyCopy" style=3D"border-collapse:
+                                        collapse; font-family:
+                                        'Helvetica Neue', Helvetica,
+                                        Arial, 'Lucida Grande',
+                                        sans-serif; font-size: 18px;
+                                        font-weight: bold; line-height:
+                                        20px; padding: 5px 7% 9px 7%;
+                                        color: #000000;">Interested in cand=
+idate?</td>=20
+                  </tr>=20
+                  <tr>=20
+                   <td class=3D"bodyCopy" style=3D"border-collapse:
+                                        collapse; font-family:
+                                        'Helvetica Neue', Helvetica,
+                                        Arial, 'Lucida Grande',
+                                        sans-serif; font-size: 14px;
+                                        line-height: 20px; padding: 0 7%
+                                        20px 7%; color: #666666;">Mark your=
+ interest level to keep your candidate list organized.</td>=20
+                  </tr>=20
+                  <tr>=20
+                   <td class=3D"buttonPadding" style=3D"border-collapse:
+                                        collapse; padding: 0 7% 20px
+                                        7%;">=20
+                    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+>=20
+                     <tbody>=20
+                      <tr>=20
+                       <td>=20
+                        <table class=3D"flexible" style=3D"max-width:
+                                                  240px;" width=3D"110" cel=
+lspacing=3D"0" cellpadding=3D"0">=20
+                         <tbody>=20
+                          <tr>=20
+                           <td class=3D"active" style=3D"border:
+                                                        1px solid
+                                                        #bbbbbb;
+                                                        background-size:
+                                                        100% 100%;
+                                                        background-image:
+url(https://d3l2aiuysuvlk2.cloudfront.net/draw/s/86857f1/bg-YNMbutton.png);
+background-repeat: repeat-x; mso-padding-alt: 11px 10px 12px;
+                                                        -webkit-border-top-=
+left-radius:
+5px;-moz-border-top-left-radius: 5px;border-top-left-radius:
+                                                        5px;-webkit-border-=
+bottom-left-radius:
+5px;-moz-border-bottom-left-radius: 5px;border-bottom-left-radius: 5px;" ba=
+ckground=3D"https://d3l2aiuysuvlk2.cloudfront.net/draw/s/86857f1/bg-YNMbutt=
+on.png" bgcolor=3D"#e6e6e6" align=3D"center"><a href=3D"https://employers.i=
+ndeed.com/l/c/candidates/sentiment?refUid=3D1cg2dc8pg2uinaue&amp;id=3DAAAAA=
+VHRe29KFcp44ac%2BeYNcM7kArp05iStz5W1N8zES%2FfgWilYj17s042L%2FScAIVrcnHRwEsK=
+pqGXLJDkjK09ofAkEHEHUGnQjeCM9Nf3NmZ%2BXAJIJQWBZ23i80uiBUvaxnuljnAATxlk2WYKY=
+LesBhN%2BoKypCiApUtX1DPgVPT2QZ19A%3D%3D&amp;token=3Dhttps%3A%2F%2Femployers=
+.indeed.com%2Fl%2Fc%2Fcandidates%2Fsentiment%3FrefUid%3D1cg2dc8pg2uinaue%26=
+id%3DAAAAAVHRe29KFcp44ac%252BeYNcM7kArp05iStz5W1N8zES%252FfgWilYj17s042L%25=
+2FScAIVrcnHRwEsKpqGXLJDkjK09ofAkEHEHUGnQjeCM9Nf3NmZ%252BXAJIJQWBZ23i80uiBUv=
+axnuljnAATxlk2WYKYLesBhN%252BoKypCiApUtX1DPgVPT2QZ19A%253D%253D" target=3D"=
+_blank" style=3D"font:bold 15px/16px HelveticaNeue, Helvetica,
+                                                          Arial,
+                                                          sans-serif;
+                                                          text-decoration:n=
+one;
+                                                          color: #000;
+                                                          display:
+                                                          block;
+                                                          padding: 11px
+                                                          10px 12px;" moz-d=
+o-not-send=3D"true">Yes</a></td>=20
+                          </tr>=20
+                         </tbody>=20
+                        </table> </td>=20
+                       <td>=20
+                        <table class=3D"flexible" style=3D"max-width:
+                                                  240px;" width=3D"110" cel=
+lspacing=3D"0" cellpadding=3D"0">=20
+                         <tbody>=20
+                          <tr>=20
+                           <td class=3D"active" style=3D"border:
+                                                        1px solid
+                                                        #bbbbbb;
+                                                        background-size:
+                                                        100% 100%;
+                                                        background-image:
+url(https://d3l2aiuysuvlk2.cloudfront.net/draw/s/86857f1/bg-YNMbutton.png);
+background-repeat: repeat-x; mso-padding-alt: 11px 10px 12px; " background=
+=3D"https://d3l2aiuysuvlk2.cloudfront.net/draw/s/86857f1/bg-YNMbutton.png" =
+bgcolor=3D"#e6e6e6" align=3D"center"><a href=3D"https://employers.indeed.co=
+m/l/c/candidates/sentiment?refUid=3D1cg2dc8pg2uinaue&amp;id=3DAAAAATv25n%2B=
+ZNFJqKVYS%2BbqkONaqNd%2FTTz5Ldnd%2FyjcWtJex4tOFFDWKx32XkMkYMajfWEFK0Frv0KhI=
+JLS1pibJ3DqDfyiLFSN0RdhTQSN5rdCV4MG7AmEhvJN53sOJA2%2BOMWGvcgdHzjX2S5hsSqeTf=
+4XGCcQBx5mYnQ2ZKvHFjA%3D%3D&amp;token=3Dhttps%3A%2F%2Femployers.indeed.com%=
+2Fl%2Fc%2Fcandidates%2Fsentiment%3FrefUid%3D1cg2dc8pg2uinaue%26id%3DAAAAATv=
+25n%252BZNFJqKVYS%252BbqkONaqNd%252FTTz5Ldnd%252FyjcWtJex4tOFFDWKx32XkMkYMa=
+jfWEFK0Frv0KhIJLS1pibJ3DqDfyiLFSN0RdhTQSN5rdCV4MG7AmEhvJN53sOJA2%252BOMWGvc=
+gdHzjX2S5hsSqeTf4XGCcQBx5mYnQ2ZKvHFjA%253D%253D%26token%3Dhttps%253A%252F%2=
+52Femployers.indeed.com%252Fl%252Fc%252Fcandidates%252Fsentiment%253FrefUid=
+%253D1cg2dc8pg2uinaue%2526id%253DAAAAAVHRe29KFcp44ac%25252BeYNcM7kArp05iStz=
+5W1N8zES%25252FfgWilYj17s042L%25252FScAIVrcnHRwEsKpqGXLJDkjK09ofAkEHEHUGnQj=
+eCM9Nf3NmZ%25252BXAJIJQWBZ23i80uiBUvaxnuljnAATxlk2WYKYLesBhN%25252BoKypCiAp=
+UtX1DPgVPT2QZ19A%25253D%25253D" target=3D"_blank" style=3D"font:bold 15px/1=
+6px HelveticaNeue, Helvetica,
+                                                          Arial,
+                                                          sans-serif;
+                                                          text-decoration:n=
+one;
+                                                          color: #000;
+                                                          display:
+                                                          block;
+                                                          padding: 11px
+                                                          10px 12px;" moz-d=
+o-not-send=3D"true">Maybe</a></td>=20
+                          </tr>=20
+                         </tbody>=20
+                        </table> </td>=20
+                       <td>=20
+                        <table class=3D"flexible" style=3D"max-width:
+                                                  240px;" width=3D"110" cel=
+lspacing=3D"0" cellpadding=3D"0">=20
+                         <tbody>=20
+                          <tr>=20
+                           <td class=3D"active" style=3D"border:
+                                                        1px solid
+                                                        #bbbbbb;
+                                                        background-size:
+                                                        100% 100%;
+                                                        background-image:
+url(https://d3l2aiuysuvlk2.cloudfront.net/draw/s/86857f1/bg-YNMbutton.png);
+background-repeat: repeat-x; mso-padding-alt: 11px 10px 12px;
+                                                        -webkit-border-top-=
+right-radius:
+5px;-moz-border-top-right-radius: 5px; border-top-right-radius:
+                                                        5px;-webkit-border-=
+bottom-right-radius:
+5px;-moz-border-bottom-right-radius: 5px; border-bottom-right-radius:
+                                                        5px;" background=3D=
+"https://d3l2aiuysuvlk2.cloudfront.net/draw/s/86857f1/bg-YNMbutton.png" bgc=
+olor=3D"#e6e6e6" align=3D"center"><a href=3D"https://employers.indeed.com/l=
+/c/candidates/sentiment?refUid=3D1cg2dc8pg2uinaue&amp;id=3DAAAAAYcVw%2F0e9j=
+JRy8wDtBa%2FvGKDnDhJt%2FH9PYhAttzVXA8kQfC45kJV%2FQrqhY4gq7LGVkCVOMN6Wzv6pbi=
+PTEwAHSjSmS5rgFApADpcgd2OOLhNY1LwI%2F8YLNHv3Z1Y1n2ZAb3MgMb08qXbyfj%2BrjlIcJ=
+lUiOeB9BmlOYxDtrSJV955rQ%3D%3D&amp;token=3Dhttps%3A%2F%2Femployers.indeed.c=
+om%2Fl%2Fc%2Fcandidates%2Fsentiment%3FrefUid%3D1cg2dc8pg2uinaue%26id%3DAAAA=
+AYcVw%252F0e9jJRy8wDtBa%252FvGKDnDhJt%252FH9PYhAttzVXA8kQfC45kJV%252FQrqhY4=
+gq7LGVkCVOMN6Wzv6pbiPTEwAHSjSmS5rgFApADpcgd2OOLhNY1LwI%252F8YLNHv3Z1Y1n2ZAb=
+3MgMb08qXbyfj%252BrjlIcJlUiOeB9BmlOYxDtrSJV955rQ%253D%253D%26token%3Dhttps%=
+253A%252F%252Femployers.indeed.com%252Fl%252Fc%252Fcandidates%252Fsentiment=
+%253FrefUid%253D1cg2dc8pg2uinaue%2526id%253DAAAAATv25n%25252BZNFJqKVYS%2525=
+2BbqkONaqNd%25252FTTz5Ldnd%25252FyjcWtJex4tOFFDWKx32XkMkYMajfWEFK0Frv0KhIJL=
+S1pibJ3DqDfyiLFSN0RdhTQSN5rdCV4MG7AmEhvJN53sOJA2%25252BOMWGvcgdHzjX2S5hsSqe=
+Tf4XGCcQBx5mYnQ2ZKvHFjA%25253D%25253D%2526token%253Dhttps%25253A%25252F%252=
+52Femployers.indeed.com%25252Fl%25252Fc%25252Fcandidates%25252Fsentiment%25=
+253FrefUid%25253D1cg2dc8pg2uinaue%252526id%25253DAAAAAVHRe29KFcp44ac%252525=
+2BeYNcM7kArp05iStz5W1N8zES%2525252FfgWilYj17s042L%2525252FScAIVrcnHRwEsKpqG=
+XLJDkjK09ofAkEHEHUGnQjeCM9Nf3NmZ%2525252BXAJIJQWBZ23i80uiBUvaxnuljnAATxlk2W=
+YKYLesBhN%2525252BoKypCiApUtX1DPgVPT2QZ19A%2525253D%2525253D" target=3D"_bl=
+ank" style=3D"font:bold 15px/16px HelveticaNeue, Helvetica,
+                                                          Arial,
+                                                          sans-serif;
+                                                          text-decoration:n=
+one;
+                                                          color: #000;
+                                                          display:
+                                                          block;
+                                                          padding: 11px
+                                                          10px 12px;" moz-d=
+o-not-send=3D"true">Reject</a></td>=20
+                          </tr>=20
+                         </tbody>=20
+                        </table> </td>=20
+                      </tr>=20
+                     </tbody>=20
+                    </table> </td>=20
+                  </tr>=20
+                  <tr>=20
+                   <td class=3D"bodyCopy" style=3D"border-collapse:
+                                        collapse; font-family:
+                                        'Helvetica Neue', Helvetica,
+                                        Arial, 'Lucida Grande',
+                                        sans-serif; font-size: 13px;
+                                        line-height: 20px; padding: 0 7%
+                                        20px 7%; color: #666666;"><img src=
+=3D"https://d3l2aiuysuvlk2.cloudfront.net/draw/s/ea3a272/icon-lock@2x.png" =
+style=3D"display:inline-block;
+                                          vertical-align: middle;
+                                          height: 24px; width: 24px;" moz-d=
+o-not-send=3D"true"><span style=3D"vertical-align:
+                                          middle;">Interest levels are not =
+visible to candidates.</span></td>=20
+                  </tr>=20
+                 </tbody>=20
+                </table>=20
+                <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0">=20
+                 <tbody>=20
+                  <tr>=20
+                   <td class=3D"bodyCopy" style=3D"border-collapse:
+                                        collapse; font-family:'Helvetica
+                                        Neue', Helvetica, Arial, 'Lucida
+                                        Grande', sans-serif; font-size:
+                                        14px; line-height: 21px;
+                                        padding: 32px 7% 24px 7%;
+                                        background-color: #EFEFEF;
+                                        color: #666666;"> <p style=3D"margi=
+n: 0;
+                                          font-family:
+                                          'HelveticaNeue-Light','Helvetica
+                                          Neue Light','Helvetica Neue',
+                                          Helvetica, Arial, sans-serif;
+                                          font-size: 22px; font-weight:
+                                          normal; color: #666666;
+                                          padding-bottom: 10px;
+                                          border-bottom: 1px solid
+                                          #DDDDDD;">Application Questions</=
+p> <br> <span style=3D"font-weight: bold;">Are you in Orlando, FL?</span><b=
+r> Yes<br> </td>=20
+                  </tr>=20
+                  <!-- END IF Application Questions -->=20
+                  <!-- END IF Show Auto Reject Option -->=20
+                  <!-- END IF Candidate Background Check Snippet -->=20
+                  <!-- END IF Cover Letter -->=20
+                  <!-- END IF Resume Download Link -->=20
+                 </tbody>=20
+                </table>=20
+                <!-- END IF Application Questions or Cover Letter or Auto R=
+eject or Background Checks -->=20
+                <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0">=20
+                 <tbody>=20
+                  <tr>=20
+                   <td class=3D"bodyCopy" style=3D"border-collapse:
+                                        collapse; font-family:
+                                        'Helvetica Neue', Helvetica,
+                                        Arial, 'Lucida Grande',
+                                        sans-serif; font-size: 14px;
+                                        line-height: 20px; padding: 20px
+                                        7%; color: #666666;">You may also r=
+eply to this email to contact candidate.</td>=20
+                  </tr>=20
+                 </tbody>=20
+                </table>=20
+                <table style=3D"border-top:1px solid
+                                  #DDDDDD;" width=3D"100%" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0">=20
+                 <tbody>=20
+                  <tr>=20
+                   <td style=3D"margin: auto; padding:
+                                        20px 0% 20px 7%;"><a href=3D"https:=
+//employers.indeed.com/redirect/candidatemanagementvideolink?refUid=3D1cg2d=
+c8pg2uinaue&amp;ctx=3Demail-application-candidate-management-video&amp;lid=
+=3Dcandidate-management-video" moz-do-not-send=3D"true"><img src=3D"https:/=
+/d3l2aiuysuvlk2.cloudfront.net/draw/s/55fdf53/candidate-management-video-st=
+ill@2x.png" alt=3D"Watch now" style=3D"outline:none;
+                                            text-decoration:none;
+                                            -ms-interpolation-mode:bicubic;
+                                            height:auto;
+                                            border-style:none;
+                                            max-width: 100%; height:
+                                            auto;" moz-do-not-send=3D"true"=
+ border=3D"0"></a></td>=20
+                   <td style=3D"border-collapse:
+                                        collapse; font-family:
+                                        'HelveticaNeue-Light','Helvetica
+                                        Neue Light','Helvetica Neue',
+                                        Helvetica, Arial, sans-serif;
+                                        font-size: 18px;
+                                        font-weight:normal; line-height:
+                                        32px; margin: 0; padding: 20px
+                                        7% 20px 20px; vertical-align:
+                                        top;">=20
+                    <div>=20
+                     <b>Video</b>: Learn more about managing your candidate=
+s on Indeed=20
+                    </div> <a href=3D"https://employers.indeed.com/redirect=
+/candidatemanagementvideolink?refUid=3D1cg2dc8pg2uinaue&amp;ctx=3Demail-app=
+lication-candidate-management-video&amp;lid=3Dcandidate-management-video" m=
+oz-do-not-send=3D"true">Watch now</a></td>=20
+                  </tr>=20
+                 </tbody>=20
+                </table>=20
+                <table style=3D"border-top:1px solid
+                                  #DDDDDD;" width=3D"100%" cellspacing=3D"0=
+" cellpadding=3D"0" border=3D"0">=20
+                 <tbody>=20
+                  <tr>=20
+                   <td style=3D"border-collapse:
+                                        collapse; font-family:
+                                        'HelveticaNeue-Light','Helvetica
+                                        Neue Light','Helvetica Neue',
+                                        Helvetica, Arial, sans-serif;
+                                        font-size: 20px;
+                                        font-weight:normal; line-height:
+                                        32px; margin: 0; padding: 10px
+                                        7% 10px 7%;">Manage candidates from=
+ your phone.<br> <a href=3D"https://employers.indeed.com/redirect/appstorel=
+ink?campaignname=3DApplication%20Bottom%20Promo&amp;appstore=3Dios" style=
+=3D"padding-right: 10px" moz-do-not-send=3D"true"><img src=3D"https://d3l2a=
+iuysuvlk2.cloudfront.net/draw/s/84b7536/apple-appstore-badge-2x-en.png" alt=
+=3D"App Store" style=3D"outline:none;
+                                            text-decoration:none;
+                                            -ms-interpolation-mode:bicubic;
+                                            max-width:100%; height:auto;
+                                            border-style:none;
+                                            margin-top: 5px" moz-do-not-sen=
+d=3D"true" width=3D"135" height=3D"40" border=3D"0"></a><a href=3D"https://=
+employers.indeed.com/redirect/appstorelink?campaignname=3DApplication%20Bot=
+tom%20Promo&amp;appstore=3Dandroid" moz-do-not-send=3D"true"><img src=3D"ht=
+tps://d3l2aiuysuvlk2.cloudfront.net/draw/s/62f6855/google-playstore-badge-2=
+x-en.png" alt=3D"Google Play" style=3D"outline:none;
+                                            text-decoration:none;
+                                            -ms-interpolation-mode:bicubic;
+                                            max-width:100%; height:auto;
+                                            border-style:none;
+                                            margin-top: 5px" moz-do-not-sen=
+d=3D"true" width=3D"137" height=3D"40" border=3D"0"></a></td>=20
+                  </tr>=20
+                 </tbody>=20
+                </table>=20
+                <table id=3D"footerWrapper" style=3D"width:100%; border-top=
+:1px
+                                  solid #DDDDDD;" cellspacing=3D"0" cellpad=
+ding=3D"0" border=3D"0">=20
+                 <tbody>=20
+                  <tr>=20
+                   <td id=3D"footerContent" style=3D"margin:0;
+                                        border-collapse:collapse;
+                                        font-family: 'Helvetica Neue',
+                                        Helvetica, Arial, 'Lucida
+                                        Grande', sans-serif; padding:
+                                        24px 7%;">=20
+                    <div style=3D"padding: 10px 0 10px
+                                          0;">=20
+                     <img src=3D"https://ads.indeed.com/images/email/indeed=
+-logo.png?refUid=3D1cg2dc8pg2uinaue" alt=3D"Indeed Logo" title=3D"Indeed Lo=
+go" style=3D"outline:none;
+                                            text-decoration:none;
+                                            -ms-interpolation-mode:bicubic;
+                                            max-width:100%; height:auto;
+                                            border-style:none;" moz-do-not-=
+send=3D"true" width=3D"181" height=3D"50" border=3D"0">=20
+                    </div> <span id=3D"copyright" style=3D"font-size: 11px;=
+ color:
+                                          #999999; text-decoration:
+                                          none;"><a href=3D"http://www.inde=
+ed.com?isid=3Dapplication-email&amp;hl=3Den&amp;co=3DUS" style=3D"color: #2=
+164f3;
+                                            text-decoration: none;
+                                            font-size: 11px;" moz-do-not-se=
+nd=3D"true">Indeed</a> - one search. all jobs.<br> <bdi>6433 Champion Grand=
+view Way, Building 1, Austin, TX 78750</bdi><br> =C2=A92018 Indeed</span></=
+td>=20
+                  </tr>=20
+                 </tbody>=20
+                </table> </td>=20
+              </tr>=20
+             </tbody>=20
+            </table> </td>=20
+          </tr>=20
+         </tbody>=20
+        </table> </td>=20
+      </tr>=20
+     </tbody>=20
+    </table>=20
+   </div>=20
+   <div id=3D"report-suspicious-895875697923141585" style=3D"border-top:sol=
+id 1px #d8d8d8; color:#999;
+        padding-top:7px; margin-top:3px; font-size:12px;" class=3D"dremr-re=
+port-suspicious">=20
+    <b>Suspect spam or fraud?</b>=20
+    <a href=3D"https://m.indeedemail.com/report-email?info=3DHrC5odAoDNgtjh=
+1k-VHJAFTXBSFe3RFkC9w_sWyj5P3SOg-SQvwgrkzuuGk5z7FuycNyLEND0x0AiXjOND5-pGPvx=
+_tLNAWprnDFyM0oShFMYT_gQnV5D8HVPtCAlb8nQXOYmnkNRa3RC3jDK6PyX3i66lMuMwVDdgYm=
+7NoSSznpyxFS7p0C" style=3D"color:#999" moz-do-not-send=3D"true">Report this=
+ message to Indeed</a>=20
+   </div>=20
+   <div id=3D"legal-disclaimer" style=3D"color:gray;margin-top:10px;font-si=
+ze:9px" class=3D"dremr-disclaimer">=20
+    <div>
+      By replying or using an indeedemail.com email address, you agree that=
+ this email will be processed and analyzed according to the Indeed=20
+     <a href=3D"https://www.indeed.com/legal?hl=3Den&amp;co=3DUS#cookies" s=
+tyle=3D"color:#999" moz-do-not-send=3D"true">Cookie Policy</a>,=20
+     <a href=3D"https://www.indeed.com/legal?hl=3Den&amp;co=3DUS#privacy" s=
+tyle=3D"color:#999" moz-do-not-send=3D"true">Privacy Policy</a>, and=20
+     <a href=3D"https://www.indeed.com/legal?hl=3Den&amp;co=3DUS#tos" style=
+=3D"color:#999" moz-do-not-send=3D"true">Terms of Service</a>.=20
+    </div>=20
+    <div>=20
+     <a href=3D"https://www.indeed.com/?hl=3Den&amp;co=3DUS" style=3D"color=
+:#999" moz-do-not-send=3D"true">Indeed</a> | 6433 Champion Grandview Way, B=
+uilding 1, Austin, TX 78750=20
+    </div>=20
+   </div>=20
+  </blockquote>=20
+  <br>=20
+  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" al=
+t=3D"iris-jobseeker-content">=20
+   <tbody>=20
+    <tr>=20
+     <td style=3D"padding:12px 0">=20
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+">=20
+       <tbody>=20
+        <tr>=20
+         <td class=3D"iris-button-header iris-button-header-top " style=3D"=
+border:1px solid #E9E9E9;box-sizing:border-box;height:2px;"></td>=20
+        </tr>=20
+       </tbody>=20
+      </table></td>=20
+    </tr>=20
+   </tbody>=20
+  </table>=20
+  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" al=
+t=3D"iris-jobseeker-content">=20
+   <tbody>=20
+    <tr>=20
+     <td id=3D"replyFooterMsg" class=3D"iris-replay-test-2-wrapper">=20
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+">=20
+       <tbody>=20
+        <tr>=20
+         <td style=3D"padding:2px 0 2px 2px;width:28px;"><img class=3D"iris=
+-replay-test-2-image" src=3D"http://offers.indeed.com/rs/699-SXJ-715/images=
+/subscriptions-icon.png" width=3D"28" alt=3D""></td>=20
+         <td class=3D"iris-replay-test-2-label" style=3D"height:16px;color:=
+#000000;font-family:'Helvetica Neue', Roboto, arial, sans-serif;font-size:1=
+0px;font-weight:bold;line-height:16px;vertical-align:middle;padding-left:12=
+px;">You can respond by replying directly to this email</td>=20
+        </tr>=20
+       </tbody>=20
+      </table></td>=20
+    </tr>=20
+   </tbody>=20
+  </table>=20
+  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" al=
+t=3D"iris-jobseeker-content">=20
+   <tbody>=20
+    <tr>=20
+     <td style=3D"padding:12px 0">=20
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+">=20
+       <tbody>=20
+        <tr>=20
+         <td class=3D"iris-button-header iris-button-header-top " style=3D"=
+border:1px solid #E9E9E9;box-sizing:border-box;height:2px;"></td>=20
+        </tr>=20
+       </tbody>=20
+      </table></td>=20
+    </tr>=20
+   </tbody>=20
+  </table>=20
+  <table width=3D"100%" class=3D"iris-button-mobile-only" style=3D"padding-=
+bottom:12px;display:none;mso-hide:all;max-height:0px;overflow:hidden;" id=
+=3D"phoneButton" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" alt=3D"ir=
+is-jobseeker-content">=20
+   <tbody>=20
+    <tr>=20
+     <td class=3D"iris-button-wrapper">=20
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" style=3D"mso-hide:all;">=20
+       <tbody>=20
+        <tr>=20
+         <td class=3D"stack ph-20" style=3D"width:200px;">=20
+          <div>=20
+           <!--[if mso]><v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:v=
+ml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" href=3D"https://cts.i=
+ndeed.com/v0?tk=3D15ffa955-6935-4c3b-9b85-7957120963fa&amp;r=3Dtel%3A%2B1-4=
+07-930-8265" style=3D"height:36px;v-text-anchor:middle;width:200px;" arcsiz=
+e=3D"63%" strokecolor=3D"#ECECEC" fillcolor=3D"#FFFFFF"><w:anchorlock/><cen=
+ter style=3D"color:#085FF7;font-family:'Helvetica Neue', Roboto, Arial, san=
+s-serif;font-size:10px;font-weight:bold;">Call Fresh Lines Directly</center=
+></v:roundrect><![endif]-->=20
+           <a href=3D"https://cts.indeed.com/v0?tk=3D15ffa955-6935-4c3b-9b8=
+5-7957120963fa&amp;r=3Dtel%3A%2B1-407-930-8265" class=3D"iris-button" style=
+=3D"background-color:#FFFFFF;border:2px solid #ECECEC;;color:#085FF7;displa=
+y:inline-block;font-family:'Helvetica Neue', Roboto, Arial, sans-serif;font=
+-size:10px;font-weight:500;line-height:36px;text-align:center;text-decorati=
+on:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;border-radiu=
+s:25px;">Call Fresh Lines directly</a>=20
+          </div></td>=20
+        </tr>=20
+       </tbody>=20
+      </table></td>=20
+    </tr>=20
+   </tbody>=20
+  </table>=20
+  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" al=
+t=3D"iris-jobseeker-content">=20
+   <tbody>=20
+    <tr>=20
+     <td id=3D"jobDetailFooterMessage" class=3D"iris-button-wrapper" style=
+=3D"padding-bottom:12px;">=20
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+">=20
+       <tbody>=20
+        <tr>=20
+         <td class=3D"ph-20 stack" style=3D"width:200px">=20
+          <div>=20
+           <!--[if mso]><v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:v=
+ml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" href=3D"https://cts.i=
+ndeed.com/v0?tk=3D129733a9-f883-4f91-a828-eeab749dbdf5&amp;r=3Dhttp%3A%2F%2=
+Fwww.indeed.com%2Fviewjob%3Fjk%3Daf109c370a46b261%26from%3Ddremrfooter" sty=
+le=3D"height:36px;v-text-anchor:middle;width:200px;" arcsize=3D"63%" stroke=
+color=3D"#ECECEC" fillcolor=3D"#FFFFFF"><w:anchorlock/><center style=3D"col=
+or:#085FF7;font-family:'Helvetica Neue', Roboto, Arial, sans-serif;font-siz=
+e:10px;font-weight:bold;">Review the job description</center></v:roundrect>=
+<![endif]-->=20
+           <a href=3D"https://cts.indeed.com/v0?tk=3D129733a9-f883-4f91-a82=
+8-eeab749dbdf5&amp;r=3Dhttp%3A%2F%2Fwww.indeed.com%2Fviewjob%3Fjk%3Daf109c3=
+70a46b261%26from%3Ddremrfooter" class=3D"iris-button" style=3D"background-c=
+olor:#FFFFFF;border:2px solid #ECECEC;;color:#085FF7;display:inline-block;f=
+ont-family:'Helvetica Neue', Roboto, Arial, sans-serif;font-size:10px;font-=
+weight:500;line-height:36px;text-align:center;text-decoration:none;width:20=
+0px;-webkit-text-size-adjust:none;mso-hide:all;border-radius:25px;">Review =
+the job description</a>=20
+          </div></td>=20
+         <td class=3D"iris-button-label stack" style=3D"font-family:'Helvet=
+ica Neue', Roboto, arial, sans-serif;color:#000000;padding-left:16px;font-s=
+ize:10px">This email relates to your application for Javascript Developers =
+at Fresh Lines</td>=20
+        </tr>=20
+       </tbody>=20
+      </table></td>=20
+    </tr>=20
+   </tbody>=20
+  </table>=20
+  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" al=
+t=3D"iris-jobseeker-content">=20
+   <tbody>=20
+    <tr>=20
+     <td id=3D"withdrawButton" class=3D"iris-button-wrapper" style=3D"paddi=
+ng-bottom:9px;">=20
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+">=20
+       <tbody>=20
+        <tr>=20
+         <td class=3D"stack" style=3D"width:200px;">=20
+          <div>=20
+           <!--[if mso]><v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:v=
+ml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" href=3D"https://cts.i=
+ndeed.com/v0?tk=3Dc9124864-0df1-4b37-8859-14a0f124d2f9&amp;r=3Dhttps%3A%2F%=
+2Flink.indeed.com%2Fwithdraw%2Fb0249ad0f534a04011a4%3Fco%3DUS%26hl%3Den_US"=
+ style=3D"height:36px;v-text-anchor:middle;width:200px;" arcsize=3D"63%" st=
+rokecolor=3D"#ECECEC" fillcolor=3D"#FFFFFF"><w:anchorlock/><center style=3D=
+"color:#085FF7;font-family:'Helvetica Neue', Roboto, Arial, sans-serif;font=
+-size:10px;font-weight:bold;">Close your application for this job</center><=
+/v:roundrect><![endif]-->=20
+           <a href=3D"https://cts.indeed.com/v0?tk=3Dc9124864-0df1-4b37-885=
+9-14a0f124d2f9&amp;r=3Dhttps%3A%2F%2Flink.indeed.com%2Fwithdraw%2Fb0249ad0f=
+534a04011a4%3Fco%3DUS%26hl%3Den_US" class=3D"iris-button" style=3D"backgrou=
+nd-color:#FFFFFF;border:2px solid #ECECEC;;color:#085FF7;display:inline-blo=
+ck;font-family:'Helvetica Neue', Roboto, Arial, sans-serif;font-size:10px;f=
+ont-weight:500;line-height:36px;text-align:center;text-decoration:none;widt=
+h:200px;-webkit-text-size-adjust:none;mso-hide:all;border-radius:25px;">Clo=
+se your application for this job</a>=20
+          </div></td>=20
+         <td class=3D"iris-button-label stack" style=3D"font-family:'Helvet=
+ica Neue', Roboto, arial, sans-serif;color:#000000;padding-left:16px;font-s=
+ize:10px">You'll have the option to tell the employer why you're closing yo=
+ur application, and you'll still be eligible for other roles at this compan=
+y.</td>=20
+        </tr>=20
+       </tbody>=20
+      </table></td>=20
+    </tr>=20
+   </tbody>=20
+  </table> =20
+  <div id=3D"report-suspicious--4799100197693366904" style=3D"border-top:so=
+lid 1px #d8d8d8; color:#999; padding-top:7px; margin-top:3px; font-size:12p=
+x;" class=3D"dremr-report-suspicious">
+   <b>Suspect spam or fraud?</b>
+   <a href=3D"https://m.indeedemail.com/report-email?info=3D0saSrpPWH5p7uoo=
+ZdNLFsTWr8z0WoIQna4NfDYsRa_l8mS6ypKjGTFrSUuYYCCSQJfbJRpevnmPnH4fg2ZHJwVViJo=
+hFWW_ZjnFwpKNel3GtDn2V7l28X32DL0ozjMEW_3Ek-RWWj-FaQMXLK9sOeubONM0pI274d2be7=
+Ga7VhgOaSWUVC5iTRPRYjrH8NbW3bCVi1hhGqlY6YA" style=3D"color:#999">Report thi=
+s message to Indeed</a>
+  </div>
+ </body>
+</html>
+------=_Part_25159251_223940146.1529091217468--
+
+------=_Part_25159250_790175625.1529091217468
+Content-Type: image/png; name=kahhknbaijnnedho.png
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=kahhknbaijnnedho.png
+
+iVBORw0KGgoAAAANSUhEUgAAAMgAAAAlCAYAAAAHgqbCAAATnUlEQVR4nO1ce5RbVbn/gMIFCgoj
+er0sZClXl6gsAXkIlatV5F4rF22nnBbLzDSZzJyZPObVZJLJJJnz5XHymCQnJznJTNJOxdIRJdKR
+VyuIY8HSlse0mUeS6lWQQaQ+mApaRNrCvn/k/Zxk6HQKK7+1fmt1ZX/ft7+9Z//OPvtxClAtcPoK
+MB5qBTZ2P7DxCbDEXwV2+giw00eAmfwzWKIxYOM7gI1pwRC9uur4NdTwvgPiMjAd+hqwsZ8CE30b
+2DipiMyB42CJ7QdL7G4Ihc5e6mbUUMPJh/npemDjMxWLoiSjs8DGdUDgjKVuUg01vHdw4fPAPD36
+3oWRR0tsF1ge/8RSN6+GGhYOw/PXgiW2/6SLI/3qFT0MAwdvXepmnjYwHVIAG7sfrFEBVFPLlzqd
+GsoBn7sGmOjcookjsz55EwZmbq8qN0tkI+BBK+BeLM+4CdhpDXDh8xapl04uLLEHkw+OOcBY3VKn
+w3Hcef6hIQ3P8za/PyRHxDOr8Q8EQrfwPG8LBEK3LFaOSwMcvQyYqefBOEVOCU2TRwEj3644P3N0
+vIpZ6rQYbBXBEh87nXLGkZE6tzs4JwSCRAiE4qEqNlgQ8ZNCIPi6EAgSwe//h3d4+KrFzPXUAR85
+H/T7nwHDs+QU8wWgwh+tKMeMQN4FS/xVMMdeSiz+8xn7I7DxKUC8aJF77eTgNBaI1zscQ8RlFfsi
+Xp8QVoI8z39nMXM9ddA+ZYa+p8jS8FdhgAp2t1ICYQ4cB9P0dRAOnwWqqeVFiRPnv292zD5AAlFv
+3Xqh1z98PxcIvioMhX4UCoU+vJi5nhr0PHoFKB89AsrHyZKx+1HpvHmmZ5ADx8D81OdOQc+cGnyA
+BJICx3HnEULeHw+oedH1cBC6HiZLys6fRgCh/GIwWyDW2OdPUe8sPj6AAvngoHn71UBvOwbSMAFZ
++C8gDe8AyQMWWPcTBmRbsCre9RMG5PdZQR52g/SBEaC3HQNZmFRM8ZZvlM11oQJBPBeMcSlYY32A
+M18EAABr+KNgiXvAFJ8Ga1Qo7jd1FbAxHszRPWCJHwA29ivAuB30U5+at86Bg7eCJbY1uV0+AZaZ
+x8Aa6QfrxJUFtsUEgjNfBGtUAHN8L7DxCWCjPwTTwZvnbyqeg4h14XD4rIXavMc1yLneoaF2ng/1
+CkJQkr/A9/l8N/mHglqeD3XiyEhd0udSt9ut8wWGfiUIwQPeQPBxvz/U7fP5PlRJncPDwx/zDA11
+eP3BnwlC8IDgDz4jCEM/9HqD824AIeKl/qEh1hsIPOkPhCYEIbhPCASHBwZCX0/kTt/jgdbtx6H5
+3m6gT+L7Yv3oZdA88negt5OK2XLvSNmYCxZIrC69dW2MS8A2fTGY4tPpHS9zdDzHPhQ6G9gYD2z8
+RMktatMhRZn6LGV22F4DjH08xz4lEDb+GtgnPgwYbQE2/s+i/hi3l6wW8QJE/DkinmAYZriETR3D
+ME8wDHOcYZitxWw4jqtzu4fnfP7hqgWS5/uHQCBwQXa5EBju8/mHic8//K4gCFd6hoZu93iCf0v+
+lkOvP7A3EAh8vFRdAAA+n+8OnyC8Vszf5x8mgjD0g/wcUnA6nd91+Yf/Wsa3AaBpswwahz9WaQdU
+jKbQ5dCw+SiIN5Mq+Ce4Ay8pGXOhaxD7xIeBiR5OPqWNwMaeSfw7/g6w8b8DG9+RtsXwOVkDloAl
+FoaB6e8CPrISTDOdYI3+Nl1mjEsK6rLEA+ly08wkGONSwOhdCdHE/ghs7BdFfFIzyGFgY9tz/m2Z
+2QKm+K9zbyNMqYo102g0KhGRZLHgHIJhGGNW+bsGg+HafJvEIHfPebx+4vR6FyCQhK+H52dVKlXO
+wafH66c9Xj/xeP0nPF6v2+Px/I3jBeLh+T1un0/w+ISHeK/wVtKG8F7fIUQsOj45jlNa7c53PF6B
+cJzwAs8HWr3ewC2IuI7zeh/PxPDuz8/D4fDflip3ufx/ZRi/meeF9R6Pp8PDCz/neOE1t9v9CYCV
+uY0PBAIXcBx349BQaHUgELxzeHh4bTH6/f41KbpcrvqhodDqrVu3XpgORHkvhwbnUWgQSFW80/bf
+JXu/ml2s7NcH9UMXgiX+SmK2iL2UGGTRGFhitwCGLwD1Q5m8cS9mZoqYszCH+GfSYrPEX4X+mX/P
++MY+DcyBN9PiwNHcVwTEi4q+nmULko0TYGd+CfjrS9Pl4fBZwMa5zIwXewnsEwWzvdFo1OQJZGW+
+DSJas21MJtMN+TYcx9W53O45l5snTidftUBSvm53oUDcbrfI5eZJku8ODvKHOY77VraNyyWsstu9
+r7vcPHFxPEFEU349AwMDXzeztndcbp64PPwexMIH66DHO5SK4eS8a7LLbBzPpfJwOBy35fXRMp7n
+P1twQOr3h1q4QPDV7H3sSjno8hw3GAxfSAej7JfDeudRWO8iVXGd21Cy9ys5BzHPvJy4dh9ZkfZT
+TS1PXpZMDcDnwDZ9cUF8NnYNsPF/JQbh9GjJPAaiazOvPHsx4z+9KvP7QWtJ/3zkzli7oNiAxInz
+c2YSy+71BSaIH0LEXQzDvI2IQ8WqQsRLEPExRPwXIm4uZsNxXJ190D1nH3QTdtBZtUBSvna7u0Ag
+Dgcntg+6SZp2T9HbFHansyFlYxt0TeSX2wbdD9gH3cRmc79gtVqLnqMh4qUs6/5Tws75VG581x77
+oJswg+43aI/nP+ZtGCHkDJ/PdxMiruT50Jc5jruxGBHxerd78wqfL/hinkiOBYPBzLqAsl8O65xH
+YZ2TVMfBbSWTrOYkHWOZBX++QMwTq4vGZ2NMWoCm6etK5qF+6EIwz7yciBXfm/mLxL6RNdD3g8/3
+b/N2PECuQAZmbitj58m6KWArZoKI59hstovLXQ9JLtIvKrUNS3FcHcM45qw2B2FZtiqBZPtabfYC
+gRiNDnGizEEsdseBcjmwLPsnq81BzHbHi4h4fqpMiXhJqsxic4TK5WO1On6crO+fNpvtitTvNpt9
+VyoPq9X6lUrbVxEQcZngD0YXSSBPlKw4I5ATwMZ1gDMNYIyJC4jRFmAnMk+FbIFY4q+UPGFn4z9K
+DL7JP4Ml/lUwTV8HGLsxh6boDYAz1yc/DEvYpmYjLnweWOLPZ0QSPwCWyMZ5LyBmBPJ6zitbPoxx
+SdZrVvkNjfeA5EJ+zmSxEsZSnUByfBlrEYEYxSaLlSRoK7pJkLZlrc8k4xy22+3pV8oBlr09FQNZ
+G4eIn0fEG/NpNps/Z7LY7knboi39Kmcy2WQmM5vMw/IKwzAOs9n8mWr6qVwnnFyB3OF8F9bZjsAd
+zn8B5XioZMULXaTnzCAzz5WOH3ui4hkqzcmjgLHLM50zdRWwU3/IXVTHXwF2WgMYPqdovZWeg5gn
+VmdiRu+puP1VIjXIGTQRhmEWJJCk72xjnkD0RqOYQRNJlrvLxWIY03jS7jCdJZB+o1mZjlEFBwYG
+1mbleS7DmHZmlyOajiKa78tZKmQ7CEIwJAwNPSIIw2Ol6AsEd/gCwZ86AsG/n8QZ5GFYjRfB7baL
+4SvqCwuSS/fY5DgYJwmYJo4Bhivf5lWplgMzMQvGSQJM5NmSdsYD+xI2k2+DafLXwEwcKs2DMWAm
+fwPGA/ugb0/uegY9nwScvBcwcgQwQgAnCRgnCeDkBGieKbzhaoyMJeudAwyXFsjA5BowpmJFvl9x
++6sEItbpDcyc3sAQg6F6gaR89QamYAbR6/XiZBkxGBhPuVg6HTOetD2s0WjSAtEPIKZi6HT4ssHA
+xAwG5lAx6vUYNxiYmE6HL+r1uZsWFMedp9WiSq/H/0vF0xsY0teHR/R6fRtkX38KBAIXeL3BPyxk
+gV5cIPhxoBxPAuWcAMr+bA7XOZ+Dda79QA3+DOqd3SASnVtR7+v2joNuH4FN+44BVaVANHtmQbeP
+QP++0gLR7nsSdPsI6J7+HST+sGcA4rKypKiSB3KAj1wC3Xt1oN/910Tc/QT69hwBWd4HY/37xhLl
++8oLpG98TdKOgG7vogpE26+f0/briVZrqFogKV+NRl8gEK1WL9b264m2X0/UakNZgWg0unFtv56o
+dPocgSiVyv5UDK1W25isd9l8hBL3/RDxXK1W+211v26vtl9HUrFVOl3mrEulUi3n+eDsSRPIYkA5
+Pg7q3QQ6dlcvEPUTs6DeTaD3F6UFovrFGKh3E1A/8VrFN4wrgfqhS0E9vjcRezeB3l1NRevteWwO
+qDICaR9fk46hHl80gVAUVdfTo51Ta/qIRtNX3SI9y1et0RQIRKXSihNlfUStVpcViFKjGVdr+ohK
+pcoRiEajuSsTow+rbmAJIOIylUrlTMXu7dU+n5W4arlX8L/kFYbIAnnM4XC8pwuEg4OD/1U2RvfO
+cejZSaB9Z/UC6Xx4Fnp2Euh+pLRAeh4chJ6dBHp2Euh4sK2q5OeD4tHvpGN3Psrl1rtrLFk2j0DC
+a9IxenYuskB65jYpe8kmpXIBAkn4dnb2FghEoVKJE3F7SVdXeYF0K5XjCdtcgchksk9sUva+vknZ
+S7q7VY9X38Ly6OnpfTbZ9pfAYDB8weVy3cBxvq8N8r7DnMdHFkLW6jju5oX1drv96lJbxMXocrlu
+cHu9tzp5PsDx3r/oBaH0PSfFjnFQjBGgf1i9QDrCs6AYI6AYKy0Q2fYVIAmfAMUYAenYyyB/oHCx
+tlC0/vh/k/UTUIzlbtHKd4yBYoxAR3h+gaRiyHcUCAQRzzQajVKGYX6UvSDNRjgcPstoNLYh4n2I
+WF/MhqKouq7unrmu7h7S1d0drVYgKd/Ozs5CgSgU4kTcHtLV1VVWIF3d3eNd3T1EJuvJEQgAQE/P
+pkdScTo7Oxsrza8SdHT07O/q7iEdHR2/A5uN4wZdHDkd6HC57iubecu940CPEqC3HANqtHKBNKqW
+A71tFuhRApLR0gIBAGjzGxN1jBJo2/4GiEc3Ap3ZgwcAAArPAfHmFdC8bVXO783br4aWbT5o2PrZ
+nN9pPB9aRh9Mx6VHc28LtGwfS+Y2B9RIaYG0jq7JxPhBMYE0pU7IGYZ5y2w2F8zGRqNRnmXzD0S8
+It+Goqg6RUfnnKKjk8hkspdaWlpuUygUK8Vi8TeKUS6X37pq1aoP5fsqOooLJFlGOjrKC0Sh6BpP
+5nCYpukcgXR2dn5d0tJyIhOr4976+vrL8vrjzMbGxk8pFAoxTdM5J+3Szk65VCpdlS9+haJTlYqp
+UHTtAofDcZPN4SSnA+12e/lv1EWbx0E8QkAsHAfq+9UJpDE0C+IRAk1bygsE4AxoHrknUc8IgeYR
+As0jfwTR5sdg48gDiRy2vgDNRWI1bW4G8QiBjSNvQfPIL6F5JADirdtANPJyOp5oZBIacwcNiDeP
+Jcq3zAHFlRYI5V+TjiPeUkwgmHfV5Fv5NgzDuPNsvlpQDUXVSeTyOalMTiqlXC7/cr4vLZcXCKSt
+TSFO+dC0vKxA2uXy8YRtoUCSsdpFYvEJqUyWyuMNmUy+TyaTjclksp1tbfJJkVz+tlQmJ1KpNH3w
+29TU9BGaVrya/D0ulUq30XK5XyqVPpesj4jE4rfkcnmib8xm6w8srI0sLdkYIhY/J0ihwTcODT4C
+ax3HgfJVJ5AGfhYafAS+55tPIIn7ad/zb4S7hCg0+EiC2XfGfAQo3wm423s/rFqVOS1fO7AWNviO
+FLVv8L0J61wOaPJ/pKC+u/mxREz3PALxrsnKp5hArmEY5o3kwI9nH66lYDKZbkbEo8kZ5DdqdeG2
+OkVRdRKJZI6m20ilbG9vv7HQl55tbGzME0ibOONHlxVIW1vbeNK2qECSNte3tbU9RtP0sVK5SSSS
+30okkvS38fX19ZfRNL2vtH3bboqiMuMLEa9iGOZNNJrJUtFoZjXlOgsAANZarwTKeTOsd90AFFX5
+/1iCcCZQ7DVwp3sFUK7KhUVR58Ba5zdhtVUNlN0NlN0Nd9k0QDnXwFpPwasJAACsxotgLfs/sG6w
+HygXD5TLBuvczSXtAQDWDn4G7nSvgPWeL8HKlaXf9zfYLob1jpuAct4Ma21F4xkMhusQkUbET5cK
+YzAYrjUaja16vf4/i5WvXLlymVgs/lJjY+OXN2zYcGMlTAkh5SsSiW4SiVqvyb/yQtP0JU1NTTc3
+NTXdTNP05cXqT0EkEl0pFotXSCSSa6ly2+kA0NDQ8NnW1tZ2SWuro6WlxbO6vp5paWkRi1pbr6Eo
+quDBS9P02evXr7+htbW1vamp1dnS0uLZuHFjj0gkuqmYPRgYxmsYQLIU1OmYx+edPWqoYSmBiHVa
+reGQVqcnp5Iqnf6wXq+f/wu9GmpYaiiVyivVmr7fpA9hFp/vaDT9d82XVzgcPisWi9XVWOOpJBa7
+1KpS9a1UKnvfVqp6yaJS2ftOb2+vqBLhhsPhz0cikbcjkQiJRCLv1FjjKSCJRCK/Lzog5XL5rV1d
+XfHu7h7S3b3pJLOHyGSyf0gkknlnjhSmpqY+Njk5aXr66afZSCRiqbHGxebk5KQtEokU/bQZAACU
+SuUl0o6OXyo6Okj64OSksONgV1fXFysVRw01nLZAxGVtbYoOmpbPSqUy8l4okcjn2tvbh/IPjmqo
+4X0PmqbPb21tv7u1tfW5VpomrTRN6AqYtP09TdN9pQ56aqjhAwOaps8Wi8UrNmzYYG5paXlSIpFM
+SSSS34lEopcbJZLZZonkxSaJJCoWi/dIJJKgSCT6lqjSbz1qqOE0xP8DcYHQkIHJ7bgAAAAASUVO
+RK5CYII=
+------=_Part_25159250_790175625.1529091217468--
